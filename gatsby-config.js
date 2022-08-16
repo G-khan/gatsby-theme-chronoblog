@@ -85,19 +85,15 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: 'UA-111444912-1',
+        trackingId: 'UA-**-1',
       },
     },
     {
-      resolve: `gatsby-plugin-gitalk`,
+      resolve: `gatsby-plugin-valine`,
       options: {
-        config: {
-          clientID: '**',
-          clientSecret: '***',
-          repo: 'g-khan.github.io',
-          owner: 'G-khan',
-          admin: ['G-khan'],
-        }
+        appId: `**-`,
+        appKey: `**`,
+        avatar: `robohash`,
       },
     },
   ],
