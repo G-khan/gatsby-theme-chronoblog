@@ -1,13 +1,7 @@
-import Gitalk from 'gatsby-plugin-gitalk'
-import '@suziwen/gitalk/dist/gitalk.css'
+import Valine from 'gatsby-plugin-valine' // import the module
+import './comment.css'; // Import regular stylesheet
+
 
 <AuthorBanner></AuthorBanner>
 <p>&nbsp;</p>
-<Gitalk 
-  options={{
-    title: props.postData.frontmatter.title,
-    id: props.postData.fields.slug,
-    createIssueManually: true,
-    number:3,
-  }}
-/>
+<Valine serverURLs="https://cnlqoen5.api.lncldglobal.com" highlight="true" lang="en" avatar="gavatar" />
