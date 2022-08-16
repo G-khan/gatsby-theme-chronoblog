@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: 'Gökhan Ayrancıoğlu',
+    siteTitle: 'Gökhan Ayrancıoğlu - Software Engineer, Blogger, Community Organizer',
     siteDescription: 'Gökhan Ayrancıoğlu\'nun Kişisel Blogu',
     siteImage: '/banner.png', // main image of the site for metadata
     siteUrl: 'https://gokhana.dev',
@@ -48,7 +48,7 @@ module.exports = {
           feedShowMoreButton: 'show more',
           feedSearchPlaceholder: 'search',
           cardReadMoreButton: 'read more →',
-          allTagsButton: 'all posts',
+          allTagsButton: 'all tags',
         },
         feedItems: {
           // global settings for feed items
@@ -89,9 +89,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-disqus`,
+      resolve: `gatsby-plugin-gitalk`,
       options: {
-        shortname: `https-gokhana-dev`,
+        config: {
+          clientID: '**',
+          clientSecret: '***',
+          repo: 'g-khan.github.io',
+          owner: 'G-khan',
+          admin: ['G-khan'],
+        }
       },
     },
   ],
