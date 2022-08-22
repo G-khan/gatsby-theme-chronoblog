@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports = {
   siteMetadata: {
     siteTitle: 'Gökhan Ayrancıoğlu - Software Engineer, Blogger, Community Organizer',
@@ -98,3 +99,4 @@ module.exports = {
     },
   ],
 };
+
