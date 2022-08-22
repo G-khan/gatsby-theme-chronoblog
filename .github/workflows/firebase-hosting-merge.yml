@@ -25,3 +25,6 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          APPID: ${{ secrets.APPID }}
+          APPKEY: ${{ secrets.APPKEY }}
+          TRACKINGID: ${{ secrets.TRACKINGID }}
