@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: 'Gökhan Ayrancıoğlu',
+    siteTitle: 'Gökhan Ayrancıoğlu - Software Engineer, Blogger, Community Organizer',
     siteDescription: 'Gökhan Ayrancıoğlu\'nun Kişisel Blogu',
     siteImage: '/banner.png', // main image of the site for metadata
     siteUrl: 'https://gokhana.dev',
@@ -52,7 +52,7 @@ module.exports = {
         },
         feedItems: {
           // global settings for feed items
-          limit: 50,
+          limit: 10,
           yearSeparator: true,
           yearSeparatorSkipFirst: true,
           contentTypes: {
@@ -85,13 +85,15 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: 'UA-111444912-1',
+        trackingId: process.env.TRACKINGID,
       },
     },
     {
-      resolve: `gatsby-plugin-disqus`,
+      resolve: `gatsby-plugin-valine`,
       options: {
-        shortname: `https-gokhana-dev`,
+        appId: process.env.APPID,
+        appKey: process.env.APPKEY,
+        avatar: `robohash`,
       },
     },
   ],

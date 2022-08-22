@@ -1,0 +1,38 @@
+
+.vinput:focus{
+    border-bottom-color: #3B9AE1  !important;
+}
+.vinput{
+    box-sizing: border-box;
+    border-bottom: 1px #dedede solid !important;
+}
+
+.vpanel{
+    background-color: #f9f9f9;
+}
+
+.vcontent pre, code{
+    background-color:#f9f9f9  !important;
+    -webkit-text-size-adjust: 100% !important;
+    font-size: 1em  !important;
+    line-height: 1.5 !important;
+    word-wrap: break-word !important;
+    color: #082032 !important;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol !important;
+}
+
+.vhead .vnick{ 
+    font-weight: bold !important;
+    font-size: 1em  !important;
+}
+
+.vsubmit{
+    color: #000 !important;
+
+}
+
+.x{
+    border-radius: 6px;
+    box-shadow: 0 1px 3pxhsla(0,0%,0%,.2);
+    text-shadow: 0 1px 2pxhsla(0,0%,0%,.1);
+}
