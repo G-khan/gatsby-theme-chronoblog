@@ -85,14 +85,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: 'UA-**-1',
+        trackingId: process.env.TRACKINGID,
       },
     },
     {
       resolve: `gatsby-plugin-valine`,
       options: {
-        appId: `**-`,
-        appKey: `**`,
+        appId: process.env.APPID,
+        appKey: process.env.APPKEY,
         avatar: `robohash`,
       },
     },
